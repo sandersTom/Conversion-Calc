@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Converter View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="converterViewController" customModule="Conversion_Calculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="klF-Tl-Qck">
+                                <rect key="frame" x="0.0" y="105" width="375" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8k3-3J-q1X">
+                                <rect key="frame" x="0.0" y="572" width="250" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="40"/>
+                                <state key="normal" title="0">
+                                    <color key="titleColor" cyan="0.17999999999999999" magenta="0.12697666883468628" yellow="0.10707589238882065" black="1" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="numbers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cgq-aF-pci"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="siT-NS-gAf">
+                                <rect key="frame" x="0.0" y="476" width="124" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="40"/>
+                                <state key="normal" title="1">
+                                    <color key="titleColor" cyan="0.17999999999999999" magenta="0.12697666883468628" yellow="0.10707589238882065" black="1" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="numbers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JVr-mn-GFG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2uT-2m-hST">
+                                <rect key="frame" x="0.0" y="380" width="124" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="40"/>
+                                <state key="normal" title="4">
+                                    <color key="titleColor" cyan="0.17999999999999999" magenta="0.12697666883468628" yellow="0.10707589238882065" black="1" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="numbers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cSa-Kf-cXW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y5Z-0L-GXh">
+                                <rect key="frame" x="0.0" y="284" width="124" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="40"/>
+                                <state key="normal" title="7">
+                                    <color key="titleColor" cyan="0.17999999999999999" magenta="0.12697666883468628" yellow="0.10707589238882065" black="1" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="numbers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dKo-fj-zUZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UqQ-hb-mKD">
+                                <rect key="frame" x="0.0" y="188" width="124" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.70196078431372544" green="0.70196078431372544" blue="0.70196078431372544" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="40"/>
+                                <state key="normal" title="C">
+                                    <color key="titleColor" cyan="0.17999999999999999" magenta="0.1269766688" yellow="0.1070758924" black="1" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="clear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XEj-Tw-opq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1cP-fI-Qew">
+                                <rect key="frame" x="125" y="284" width="125" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="40"/>
+                                <state key="normal" title="8">
+                                    <color key="titleColor" cyan="0.17999999999999999" magenta="0.12697666883468628" yellow="0.10707589238882065" black="1" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="numbers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qqm-tF-ZBx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9hp-Y7-TdL">
+                                <rect key="frame" x="125" y="188" width="125" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.70196078431372544" green="0.70196078431372544" blue="0.70196078431372544" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="40"/>
+                                <state key="normal" title="+/-">
+                                    <color key="titleColor" cyan="0.17999999999999999" magenta="0.1269766688" yellow="0.1070758924" black="1" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="plusMinus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7If-Tw-lhH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vir-mp-9aJ">
+                                <rect key="frame" x="125" y="380" width="125" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="40"/>
+                                <state key="normal" title="5">
+                                    <color key="titleColor" cyan="0.17999999999999999" magenta="0.12697666883468628" yellow="0.10707589238882065" black="1" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="numbers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jQz-2b-p1n"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XU2-uX-YOd">
+                                <rect key="frame" x="125" y="476" width="125" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="40"/>
+                                <state key="normal" title="2">
+                                    <color key="titleColor" cyan="0.17999999999999999" magenta="0.12697666883468628" yellow="0.10707589238882065" black="1" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="numbers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YJx-wI-chB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Na7-bg-6ze">
+                                <rect key="frame" x="251" y="572" width="124" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="40"/>
+                                <state key="normal" title=".">
+                                    <color key="titleColor" cyan="0.17999999999999999" magenta="0.12697666883468628" yellow="0.10707589238882065" black="1" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="numbers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RA4-VM-l3S"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="esz-Os-JAR">
+                                <rect key="frame" x="251" y="476" width="124" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="40"/>
+                                <state key="normal" title="3">
+                                    <color key="titleColor" cyan="0.17999999999999999" magenta="0.12697666883468628" yellow="0.10707589238882065" black="1" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="numbers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="muy-B7-POv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M4t-D7-S0A">
+                                <rect key="frame" x="251" y="380" width="124" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="40"/>
+                                <state key="normal" title="6">
+                                    <color key="titleColor" cyan="0.17999999999999999" magenta="0.12697666883468628" yellow="0.10707589238882065" black="1" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="numbers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4bs-Ed-SgS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ve1-i6-Nov">
+                                <rect key="frame" x="251" y="284" width="124" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="40"/>
+                                <state key="normal" title="9">
+                                    <color key="titleColor" cyan="0.17999999999999999" magenta="0.12697666883468628" yellow="0.10707589238882065" black="1" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="numbers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Zs-lb-NDH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wLD-lh-GBL">
+                                <rect key="frame" x="251" y="188" width="124" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="23"/>
+                                <state key="normal" title="Converter">
+                                    <color key="titleColor" cyan="0.17999999999999999" magenta="0.1269766688" yellow="0.1070758924" black="1" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="converterButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3ur-2d-f4a"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CVA-L0-p5w">
+                                <rect key="frame" x="0.0" y="22" width="375" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.86274509803921573" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="inputDisplay" destination="klF-Tl-Qck" id="xlU-aJ-Pm8"/>
+                        <outlet property="outputDisplay" destination="CVA-L0-p5w" id="Gmb-t8-KWB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="40.799999999999997" y="37.331334332833585"/>
+        </scene>
+    </scenes>
+</document>
